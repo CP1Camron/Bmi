@@ -9,9 +9,9 @@ public class Main {
 
 
 
-        double height,weight;
-        String userHeight;
-        String userWeight;
+
+        double userHeight;
+        double userWeight;
 
 
         Scanner keyBoard;
@@ -25,13 +25,13 @@ public class Main {
 
 
     System.out.println("Hello, lets find out your BMI");
-    System.out.println("What is  your height in feet and inches?");
-    userHeight = keyBoard.nextLine();
+    System.out.println("What is  your height in meters?");
+    userHeight = keyBoard.nextDouble();
 
-    System.out.println("Alright, Now what is your weight in lb?");
-    userWeight = keyBoard.nextLine();
+    System.out.println("Alright, Now what is your weight in Kilograms?");
+    userWeight = keyBoard.nextDouble();
 
-    System.out.println("Alright so your BMI is...");
+            System.out.println("Alright so your BMI is..."+userWeight/userHeight);
 
 
 
